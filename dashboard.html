@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="main-dashboard-bg">
+        <section class="header-top-section">
+            <div class="container-fluid">
+                <div class="row justify-content-space-between">
+                    <div class="col-lg-4">
+                        <div class="header-top-left-wrapper">
+                            <button class="hamburger-wrapper" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-bars ham-bars-icon"></i>
+                                Menu
+                            </button>
+
+                            <a href="#" class="home-wrapper">
+                                <i class="fa-solid fa-house home-icon"></i>
+                            </a>
+                            <a href="#" class="logo-dashboard">
+                                <img src="./img/dashboard-logo.png" class="img-fluid logo-dashboard-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="header-top-right-wrapper">
+                            <a href="#" class="logo-dashboard">
+                                <img src="./img/logo-home-login.png" class="img-fluid logo-dashboard-right-img">
+                            </a>
+                            <a href="#" class="home-wrapper">
+                                <i class="fa-solid fa-globe home-icon"></i>
+                            </a>
+                            <div class="dropdown">
+                                <button class="hamburger-wrapper profile-katy-wrapper dropdown-toggle" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="user-avatar">K</span>
+                                    Katy
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-menu-list-bg" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a href="#" class="dropdown-links-access dropdown-active">
+                                           
+                                            <i class="fa-solid fa-user-group  search-modal-icon"></i>
+                                            Manage friends and family
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-links-access">
+                                            
+                                            <i class="fa-solid fa-camera search-modal-icon"></i>
+                                            Add your photo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-links-access">
+                                            <i class="fa-solid fa-right-from-bracket search-modal-icon"></i>
+                                            Log out
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <a href="#" class="home-wrapper">
+                                <i class="fa-solid fa-right-from-bracket home-icon"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shortcut-btns">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="welcome-row">
+                            <h1 class="welcome-heading">Welcome, Katy!</h1>
+                            <i class="fa-solid fa-gear setting-icon"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="shortcut-btns-wrappers">
+                            <a href="#" class="btns-child-wrappers">
+                                <i class="fa-solid fa-calendar-days btns-short-icons"></i>
+                                Appointments <br>& Visits
+                            </a>
+                            <a href="./appointment.html" class="btns-child-wrappers">
+                                <i class="fa-solid fa-calendar-check btns-short-icons"></i>
+                                Make an <br>Appointment
+                            </a>
+                            <a href="#" class="btns-child-wrappers">
+                                <i class="fa-solid fa-vr-cardboard btns-short-icons"></i>
+                                Access Virtual <br>Care
+                            </a>
+                            <a href="#" class="btns-child-wrappers">
+                                <i class="fa-solid fa-vial btns-short-icons"></i>
+                                Test Results
+                            </a>
+                            <a href="#" class="btns-child-wrappers">
+                                <i class="fa-solid fa-notes-medical btns-short-icons"></i>
+                                Medications &<br> Refills
+                            </a>
+                            <a href="#" class="btns-child-wrappers">
+                                <i class="fa-solid fa-message btns-short-icons"></i>
+
+                                Messages
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="appointment-bg-bell">
+                            <div class="row row-space-adjustment">
+                                <div class="col-md-1">
+                                    <i class="fa-solid fa-bell bell-icon"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="appointment-details">Your contact information and communication
+                                        preferences need review. Your current
+                                        email address is katyhadwiger@gmail.com. Is this correct?</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="updates-btns-div">
+                                        <a href="#" class="confirmation-btn">
+                                            Confirm
+                                        </a>
+                                        <a href="#" class="update-btn">
+                                            Update
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="appointment-bg-bell">
+                            <div class="row row-space-adjustment">
+                                <div class="col-md-1">
+                                    <i class="fa-solid fa-bell bell-icon"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="appoitment-title">Need Virtual Urgent Care? Get Help Online Now</h2>
+                                    <p class="appointment-details">It's cold outside, but you shouldn't have to be. See
+                                        a Virtual Urgent Care provider from right where you are - we've got you covered!
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="updates-btns-div">
+                                        <a href="#" class="confirmation-btn">
+                                            Learn More
+                                        </a>
+                                        <a href="#" class="update-btn">
+                                            Dismiss
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="appointment-bg-bell">
+                            <div class="row row-space-adjustment">
+                                <div class="col-md-1">
+                                    <i class="fa-solid fa-bell bell-icon"></i>
+                                </div>
+                                <div class="col-lg-8">
+
+                                    <p class="appointment-details">
+                                        Hepatitis C Screening is overdue.<br>
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="updates-btns-div">
+                                        <a href="#" class="confirmation-btn">
+                                            View Details
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider-bar-class"></div>
+                            <a href="#" class="last-divider-wrapper">
+                                <i class="fa-solid fa-shield-heart divider-icon"></i>
+                                <span class="viwe-all-text"> View all (3)</span>
+                            </a>
+                        </div>
+
+
+                        <div class="appointment-bg-bell">
+                            <div class="row row-space-adjustment">
+                                <div class="col-md-1">
+
+                                    <i class="fa-solid fa-circle-info bell-icon"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="appoitment-title">Research Study Opportunity</h2>
+                                    <p class="appointment-details">Are you a healthy female without a chronic pelvic
+                                        pain disorder diagnosis (e.g., endometriosis, uterine fibroids, adenomyosis)?
+                                        Join our remote study and help researchers better understand these disorders by
+                                        participating as a comparator. Click enroll to see if you qualify.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="updates-btns-div">
+                                        <a href="#" class="confirmation-btn">
+                                            Enroll
+                                        </a>
+                                        <a href="#" class="update-btn">
+                                            Dismiss
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="appointment-bg-bell">
+                            <div class="row row-space-adjustment">
+                                <div class="col-md-1">
+                                    <i class="fa-solid fa-bell bell-icon"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="appoitment-title">Learn Life-Saving Skills: Join an American Heart
+                                        Association (AHA) CPR Informational Class!</h2>
+                                    <p class="appointment-details">
+                                        Empower yourself and your loved ones by learning CPR from the experts. Don't
+                                        miss this vital opportunity to gain essential life-saving skills. Sign up today!
+
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="updates-btns-div">
+                                        <a href="#" class="confirmation-btn">
+                                            Register for CPR Classes
+                                        </a>
+                                        <a href="#" class="update-btn">
+                                            Dismiss
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="appointment-bg-bell">
+                            <div class="row row-space-adjustment">
+                                <div class="col-md-1">
+                                    <i class="fa-solid fa-circle-info bell-icon"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="appoitment-title">fMRI/Brain Study of Control-Related Decisions in
+                                        Bulimia Nervosa</h2>
+                                    <p class="appointment-details">
+                                        Join a Mount Sinai study on bulimia nervosa. Female adults 18-45 with eating
+                                        disorders needed. Get reimbursed for your time.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="updates-btns-div">
+                                        <a href="#" class="confirmation-btn">
+                                            Click here for more information
+                                        </a>
+                                        <a href="#" class="update-btn">
+                                            Dismiss
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="explore-bg-last">
+                            <div class="explore-header">
+
+                                <i class="fa-solid fa-lightbulb explore-icon"></i>
+                                <h1 class="welcome-heading explore-heading">Explore More</h1>
+                            </div>
+
+
+
+                            <div class="swiper mySwipernew">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="appointment-bg-bell explore-slider-space">
+                                            <div class="row row-space-adjustment">
+                                                <div class="col-md-2">
+                                                    <i class="fa-solid fa-calculator new-bell-icon"></i>
+                                                </div>
+                                                <div class="col-md-7">
+
+                                                    <h2 class="inbox-title">Communicate with your doctor</h2>
+                                                    <p class="inbox-detail">Get answers to your medical questions from
+                                                        the
+                                                        comfort
+                                                        of your own home</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="updates-btns-div explore-slider-btn">
+                                                        <a href="#" class="confirmation-btn">
+                                                            Get an estimate
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="appointment-bg-bell explore-slider-space">
+                                            <div class="row row-space-adjustment">
+                                                <div class="col-md-2">
+
+                                                    <i class="fa-solid fa-earth-america new-bell-icon"></i>
+                                                </div>
+                                                <div class="col-md-7">
+
+                                                    <h2 class="inbox-title">Share Everywhere</h2>
+                                                    <p class="inbox-detail">
+                                                        Give one-time access to your medical record to any clinician in
+                                                        the world with internet access.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="updates-btns-div explore-slider-btn">
+                                                        <a href="#" class="confirmation-btn">
+                                                            Share Now
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="appointment-bg-bell explore-slider-space">
+                                            <div class="row row-space-adjustment">
+                                                <div class="col-md-2">
+                                                    <i class="fa-solid fa-bell new-bell-icon"></i>
+                                                </div>
+                                                <div class="col-md-7">
+
+                                                    <h2 class="inbox-title">Patient Data Collection for Race, Ethnicity,
+                                                        Language and Pronoun</h2>
+                                                    <p class="inbox-detail">
+                                                        Helps us provide you, your family and your community with care
+                                                        that meets your needs. Your answers will always be private.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="updates-btns-div explore-slider-btn">
+                                                        <a href="#" class="confirmation-btn">
+                                                            Click here
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="appointment-bg-bell explore-slider-space">
+                                            <div class="row row-space-adjustment">
+                                                <div class="col-md-2">
+                                                    <i class="fa-solid fa-heart new-bell-icon"></i>
+                                                </div>
+                                                <div class="col-md-7">
+
+                                                    <h2 class="inbox-title">
+                                                        Invite Friends & Family
+                                                    </h2>
+                                                    <p class="inbox-detail">
+                                                        Invite a family member or close friend to have access to your
+                                                        medical record.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="updates-btns-div explore-slider-btn">
+                                                        <a href="#" class="confirmation-btn">
+                                                            Manage access
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="appointment-bg-bell explore-slider-space">
+                                            <div class="row row-space-adjustment">
+                                                <div class="col-md-2">
+
+                                                    <i class="fa-solid fa-file new-bell-icon"></i>
+                                                </div>
+                                                <div class="col-md-7">
+
+                                                    <h2 class="inbox-title">
+                                                        School Health Summary
+                                                    </h2>
+                                                    <p class="inbox-detail">
+                                                        View or download a PDF document containing your health
+                                                        information for easily filling out school and camp medical
+                                                        forms.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="updates-btns-div explore-slider-btn">
+                                                        <a href="#" class="confirmation-btn">
+                                                            View Summary
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="appointment-bg-bell explore-slider-space">
+                                            <div class="row row-space-adjustment">
+                                                <div class="col-md-2">
+                                                    <i class="fa-solid fa-video new-bell-icon"></i>
+                                                </div>
+                                                <div class="col-md-7">
+
+                                                    <h2 class="inbox-title">
+                                                        Your Health Record Everywhere
+                                                    </h2>
+                                                    <p class="inbox-detail">
+                                                        Your Health Record Everywhere
+                                                        Watch a video to learn how we can securely share your health
+                                                        data to provide you with the best possible care.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="updates-btns-div explore-slider-btn">
+                                                        <a href="#" class="confirmation-btn">
+                                                            Watch video
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next custom-next"></div>
+                                <div class="swiper-button-prev custom-prev"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="right-dash-side">
+                            <h1 class="welcome-heading care-heading">Care Team and Recent Providers</h1>
+                            <div class="profile-care-wrapper">
+                                <div class="d-flex gap-2">
+                                    <img src="./img/care.jpeg" class="care-team">
+                                    <div>
+                                        <p class="m-0"><a href="#" class="care-team-name">Angela Lee, DO</a></p>
+                                        <p class="care-team-detail">Primary Care Provider <br>
+                                            INTERNAL MEDICINE</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2">
+
+                                    <a href="#"> <i class="fa-solid fa-calendar-days care-icons"></i></a>
+                                    <a href="#"><i class="fa-solid fa-message care-icons"></i></a>
+                                </div>
+                            </div>
+                            <a class="last-para-care">See provider details and manage</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-footer-section">
+            <div class="container">
+                <div class="row mt-3 mb-2">
+                    <div class="col-lg-12">
+                        <div class="main-footer-pages-wrapper">
+                            <a href="#" class="login-footer-pages-links">Interoperability Guide</a>
+                            <a href="#" class="login-footer-pages-links">FAQs</a>
+                            <a href="#" class="login-footer-pages-links">Privacy Policy</a>
+                            <a href="#" class="login-footer-pages-links">Terms and Conditions</a>
+                            <a href="#" class="login-footer-pages-links">High Contrast Theming</a>
+                            <a href="#" class="login-footer-pages-links">MyChart® licensed from Epic Systems Corporation© 1999 - 2024 server c001</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+
+  
+
+    
+
+
+
+    <!-- Modal -->
+    <div class="modal side-modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog custom-side-dailog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="cancel-modal-arrow " data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-arrow-left "></i>
+                    </button>
+                </div>
+                <div class="modal-body custom-side-modal-body">
+                    <h5 class="modal-menu-title">Menu</h5>
+                    <div class="search-modal-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-modal-icon"></i>
+                        <input class="search-box-modal" placeholder=" Search the menu">
+                    </div>
+                    <div class="modal-links-header">
+                        <h2 class="sidebar-links-title">Find Care</h2>
+                    </div>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-mobile-screen search-modal-icon"></i>
+                        Access Virtual Care
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-calendar-week search-modal-icon"></i>
+                        Make an Appointment
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-users search-modal-icon"></i>
+                        View Care Team
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-map-pin search-modal-icon"></i>
+                        Find Urgent Care Location
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-notes-medical search-modal-icon"></i>
+                        Check Symptoms & Get Care
+                    </a>
+                    <div class="modal-links-header">
+                        <h2 class="sidebar-links-title">Communication</h2>
+                    </div>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-regular fa-message search-modal-icon"></i>
+                        Check Symptoms & Get Care
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-regular fa-circle-question search-modal-icon"></i>
+                        Ask a Question
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-envelope search-modal-icon"></i>
+                        Letters
+                    </a>
+                    <div class="modal-links-header">
+                        <h2 class="sidebar-links-title">My Record</h2>
+                    </div>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        COVID-19 Vaccine and Test Results
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        To Do
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Appointments & Visits
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        Test Results
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        Medications & Refills
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Manage My Pharmacies
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        Health Summary
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        My Conditions
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Plan of Care
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        Preventive Care
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        Questionnaires
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Appointments & Visits
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        Upcoming Tests and Procedures
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        Medical and Family History
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Track My Health
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Growth Charts
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Document Center
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Request Radiology Images/Reports
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Visiontree
+                    </a>
+                    <div class="modal-links-header">
+                        <h2 class="sidebar-links-title">Billing</h2>
+                    </div>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-regular fa-message search-modal-icon"></i>
+                        Billing Summary
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-regular fa-circle-question search-modal-icon"></i>
+                        Estimates
+                    </a>
+                    <div class="modal-links-header">
+                        <h2 class="sidebar-links-title">Insurance</h2>
+                    </div>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-envelope search-modal-icon"></i>
+                        Insurance Summary
+                    </a>
+
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        Coverage Details
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        Insurance ID Cards
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Referrals
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        Sharing Hub
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        Share Everywhere
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Link My Accounts
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        COVID-19 Vaccine and Test Results
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        To Do
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Appointments & Visits
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        COVID-19 Vaccine and Test Results
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        To Do
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Appointments & Visits
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-virus-covid search-modal-icon"></i>
+                        COVID-19 Vaccine and Test Results
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+                        <i class="fa-solid fa-check search-modal-icon"></i>
+                        To Do
+                    </a>
+                    <a href="#" class="sidebar-links-access">
+
+                        <i class="fa-solid fa-eye-low-vision search-modal-icon"></i>
+                        Appointments & Visits
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <!-- Modal end  -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwipernew", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+
+                768: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+
+    </script>
+
+</body>
+
+</html>
